@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+
+    <style>
+        /* Page Styling */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #222;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: flex-start;
+            gap: 25px;
+        }
+
+        nav a {
+            color: #ddd;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav a.active {
+            color: #fff;
+            font-weight: bold;
+            border-bottom: 2px solid #fff;
+        }
+
+        /* Contact Page Layout */
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .info {
+            margin-top: 20px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .info b {
+            color: #444;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/contact/" class="active">Contact Us</a>
+    </nav>
+
+    <!-- Contact Section -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        <p class="info">
+            <b>Company:</b> Milfort Solutions Inc.<br>
+            <b>Email:</b> support@milfortsolutions.com<br>
+            <b>Phone:</b> (845) 555-3921<br>
+            <b>Address:</b> 129 Garnerville Tech Park, Suite 204, NY 10923<br>
+            <b>Office Hours:</b> Mon–Fri, 9 AM – 6 PM EST
+        </p>
+
+        <p>
+            If you have any questions, feedback, or partnership inquiries, feel free to reach out.
+            Our team normally replies within 24 hours.
+        </p>
+    </div>
+</body>
+</html>
