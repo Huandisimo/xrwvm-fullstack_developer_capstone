@@ -28,18 +28,30 @@ SECRET_KEY =\
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost',
-'https://github.com/Huandisimo/xrwvm-fullstack_developer_capstone.git']
-CSRF_TRUSTED_ORIGINS = ['https://github.com/Huandisimo/xrwvm-fullstack_developer_capstone.git']
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'jjamesmilfor-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+]
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES': [],
-}
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'jjamesmilfor-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://jjamesmilfor-8000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai'
+]
+
+CSRF_COOKIE_SECURE = False        # ← ADD
+SESSION_COOKIE_SECURE = False     # ← ADD
+
 
 # Application definition
 
 INSTALLED_APPS = [
-    'djangoapp.apps.DjangoappConfig',
+    'djangoapp.apps.DjangoappConfig',   # KEEP THIS
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -47,6 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
